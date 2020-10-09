@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalcDes">
+
+    <TextView
+        android:id="@+id/main_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/tv_message"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/main_edit_Text_valor"
+        android:layout_width="244dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/main_textView2"
+        app:layout_constraintTop_toBottomOf="@+id/main_textView2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/main_textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/tv_message1"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/main_edit_Text_valor"
+        app:layout_constraintTop_toTopOf="@+id/main_edit_Text_valor"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/main_edit_Text_din"
+        android:layout_width="244dp"
+        android:layout_height="41dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/main_edit_Text_valor"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/main_edit_Text_valor"
+        app:layout_constraintTop_toBottomOf="@+id/main_textView3"
+        tools:ignore="MissingConstraints" />
+
+
+    <TextView
+        android:id="@+id/main_textView5"
+        android:layout_width="175dp"
+        android:layout_height="24dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/tv_message2"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/main_textView3"
+        app:layout_constraintTop_toTopOf="@+id/main_edit_Text_din"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/main_edit_Text_tot"
+        android:layout_width="246dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/main_button_lim"
+        app:layout_constraintEnd_toEndOf="@+id/main_edit_Text_din"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/main_edit_Text_din"
+        app:layout_constraintTop_toTopOf="@+id/main_textView5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/main_button_lim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:text="@string/bt_message5"
+        android:onClick="clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/main_button_cal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bt_message4"
+        app:layout_constraintBottom_toBottomOf="@+id/main_button_lim"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/main_button_lim"
+        app:layout_constraintTop_toTopOf="@+id/main_button_lim"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="MissingConstraints" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Prova Oficial1</string>
+    <string name="bt_message">Bolso</string>
+    <string name="bt_message1">Desconto</string>
+    <string name="bt_message2">Conversão</string>
+    <string name="tv_name">Tipos de Calculadora</string>
+    <string name="tv_message">Preço Original</string>
+    <string name="tv_message1">Desconto %</string>
+    <string name="tv_message2">Preço Final</string>
+    <string name="bt_message4">Calcular</string>
+    <string name="bt_message5">Limpar</string>
+</resources>
